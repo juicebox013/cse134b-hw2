@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimenting with HTML tags</title>
+    <link rel="icon" type="image/x-icon" href="images/cat-favicon.jpg">
+    <style>
+        .drawing-canvas {
+            border: 0.2rem solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+          <li><a href="main-page.html">Dashboard</a></li>
+          <li><a href="calendar-page.html">Calendar</a></li>
+          <li><a href="task-page.html">All Tasks</a></li>
+          <li><a href="create-task.html">Create New Task</a></li>
+          <li><a href="experiments.html">Experiments Page</a></li>
+        </ul>
+      </nav>
+    <template>
+        THIS IS HIDDEN TEXT HEHEHE
+    </template>
+    <audio controls src="/audio/boom-audio.mp3"></audio>
+    <video controls width="250">
+        <source src="/video/cat-video.mp4"> 
+    </video>
+    <canvas width="120" height="120" class="drawing-canvas" id="calendarCanvas">
+        An alternative text describing what your canvas displays.
+    </canvas>
+</body>
+<script>
+    const canvas = document.getElementById("calendarCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillRect(20, 20, 20, 20);
+  </script>
+</html>

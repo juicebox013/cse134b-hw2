@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Page</title>
+    <link rel="icon" type="image/x-icon" href="images/cat-favicon.jpg">
+    <style>
+        #calendar {
+            border: 0.2rem solid black;
+        }
+        #date-to-display {
+            border: 0.2rem solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+          <li><a href="main-page.html">Dashboard</a></li>
+          <li><a href="calendar-page.html">Calendar</a></li>
+          <li><a href="task-page.html">All Tasks</a></li>
+          <li><a href="create-task.html">Create New Task</a></li>
+        </ul>
+      </nav>
+    <h1> Calendar </h1>
+    <p>See how your tasks are spread across the month. Darker days have more due dates.</p>
+    <user-calendar id="calendar"> 
+        placeholder box for calendar 
+    </user-calendar>
+    <section id="date-to-display"> 
+        <h2> PLACEHOLDER DATE : Monday</h2>
+        <b> July 13th </b>
+        <article class="completed-tasks">
+            <h1>Completed tasks this day.</h1>
+            <article class="task">
+              <h2>July 13th, 2026</h2>
+              <p>do the dishes.</p>
+            </article>
+            <article class="task">
+              <h2>July 13th, 2026</h2>
+              <time datetime="2026-07-13 19:00"> 7:00 PM</time>
+              <p>walk the dog.</p>
+            </article>
+        </article>
+    </section>
+</body>
+</html>

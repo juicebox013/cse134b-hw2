@@ -1,1 +1,75 @@
-placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE134b HW2 : Personal Tracker</title>
+    <link rel="icon" type="image/x-icon" href="images/cat-favicon.jpg">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+          <li><a href="main-page.html">Dashboard</a></li>
+          <li><a href="calendar-page.html">Calendar</a></li>
+          <li><a href="task-page.html">All Tasks</a></li>
+          <li><a href="create-task.html">Create New Task</a></li>
+          <li><a href="experiments.html">Experiments Page</a></li>
+        </ul>
+    </nav>
+    <header> 
+        <i>Welcome Back </i>
+        <br>
+        <strong> you have PLACEHOLDER tasks today</strong>
+        <br>
+
+        <em> you have completed PLACEHOLDER tasks</em>
+    </header>
+    <h1>PLACEHOLDER (add current day with JS here)</h1>
+    <label for="feelings">How are you feeling about your tasks today?</label>
+    <br>
+
+    <textarea id="feelings" name="feelings" rows="5" cols="33">
+    I did not enjoy my tasks today.
+    </textarea>
+
+    <h2> Today's Tasks</h2>
+    <div class='task-box'> 
+        <p> placeholder text for task.</p>
+        <div class="task-completion">
+            <fieldset>
+                <legend> Is this task completed?</legend>
+                <label for="task">Completed.</label>
+                <input type="checkbox" name="task-completed" id="task-completed" />
+
+                <label for="task">Not Completed.</label>
+                <input type="checkbox" name="task-not-completed" id="task-not-completed" />
+            </fieldset>
+        </div>
+    </div>
+    <h2> Overdue Tasks</h2>
+    <div> 
+        <p> placeholder text for task.</p>
+    </div>
+    <h2> Upcoming Tasks</h2>
+    <div> 
+        <p> placeholder text for task.</p>
+    </div>
+    <h2> Task Progress</h2>
+    <div> <p> placeholder text for task.</p>
+        <label for="task-progress">Task progress:</label>
+
+        <progress id="task-progress" max="100" value="20">20%</progress>
+
+    </div>
+    <iframe 
+        src="calendar-page.html"
+        width="600"
+        height="400">
+    </iframe>
+    <picture>
+        <source srcset="/images/big-bird.png" media="(width >= 600px)" />
+        <img src="images/cat-favicon.jpg" alt="MDN" />
+      </picture>
+    <footer> Copyright by Justin Nguyen @ UCSD </footer>
+</body>
+</html>
